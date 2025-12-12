@@ -1,0 +1,212 @@
+/* General */
+body, html, .homepage {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #F4F6F8;
+  background: linear-gradient(#071428, #04263a, #001827);
+}
+
+/* Top bar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 9px;        
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  height: 60px;             
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo-section .logo img {
+  margin-left: -30px;      
+  height: 95px;
+}
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;         
+  color: white;
+}
+.site-subtitle {
+  font-size: 0.75rem;
+  color: #A0AEC0;
+}
+
+/* Navbar buttons */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 150px;   
+
+}
+.nav-buttons button {
+  padding: 10px 40px;
+  background: none;
+  border: none;
+  color: #F4F6F8;
+  cursor: pointer;
+  font-weight: 700;          /* bold text */
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+.nav-buttons button:hover {
+  color: #00B4D8;
+  transform: scale(1.05);    /* subtle hover effect */
+}
+
+.nav-buttons .signin {
+  background-color: #003057;
+  padding: 10px 40px;
+  border-radius: 6px;
+}
+
+/* Hero container */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  overflow: hidden;  /* prevents horizontal scroll */
+  margin-top: 69px;   /* pushes video + content down */
+
+}
+
+/* Full-width video behind content */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;       
+  height: 100%;       
+  object-fit: cover;  /* better scaling */
+  object-position: center;
+  z-index: 0;         
+  pointer-events: none;
+}
+
+/* Hero content */
+.hero-left {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero-left h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.hero-left p {
+  margin-top: 10px;
+  color: #A0AEC0;
+}
+.hero-buttons a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.primary-btn {
+  background: linear-gradient(to right, #00B4D8, #0077a6);
+  color: black;
+}
+.secondary-btn {
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #F4F6F8;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;    /* center all stats */
+}
+.stats > div {
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+.stats div div:first-child {
+  font-size: 0.75rem;
+  color: #A0AEC0;
+}
+.stats div div:nth-child(2) {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Hero right */
+.hero-right { flex: 1; min-width: 300px; }
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 24px;
+}
+.card-header, .card-scores, .card-progress { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.progress-bar {
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  height: 12px;
+  overflow: hidden;
+}
+.progress-fill {
+  background: linear-gradient(to right, #00B4D8, #0077a6);
+  height: 100%;
+}
+
+/* Features */
+.features h2 {
+  margin-bottom: 20px;
+}
+
+.features p {
+  margin-bottom: 40px;   
+}
+
+.features { padding: 40px 20px; text-align: center; }
+.feature-cards { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.feature-card {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.feature-title { font-weight: 700; }
+.feature-desc { color: #A0AEC0; }
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.footer-links a {
+  margin-left: 10px;
+  color: #A0AEC0;
+  text-decoration: none;
+}
+.mono { font-family: monospace; }
